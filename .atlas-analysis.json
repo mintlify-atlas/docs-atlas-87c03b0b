@@ -1,0 +1,122 @@
+{
+  "projectType": "saas",
+  "projectName": "Zoo Arcadia",
+  "projectDescription": "A comprehensive zoo management system with role-based access control, animal tracking, veterinary reports, and public-facing visitor features.",
+  "theme": "almond",
+  "primaryColor": "#2d8659",
+  "lightColor": "#52c893",
+  "darkColor": "#1a5437",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/animals",
+              "features/habitats",
+              "features/services",
+              "features/veterinary-reports",
+              "features/statistics"
+            ]
+          },
+          {
+            "group": "User Management",
+            "pages": [
+              "users/authentication",
+              "users/roles",
+              "users/permissions"
+            ]
+          },
+          {
+            "group": "Back Office",
+            "pages": [
+              "backoffice/admin-dashboard",
+              "backoffice/employee-features",
+              "backoffice/veterinary-tools",
+              "backoffice/content-management"
+            ]
+          },
+          {
+            "group": "Frontend",
+            "pages": [
+              "frontend/public-pages",
+              "frontend/contact-forms",
+              "frontend/testimonials",
+              "frontend/responsive-design"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture",
+              "development/domain-structure",
+              "development/mvc-pattern",
+              "development/routing"
+            ]
+          },
+          {
+            "group": "Database",
+            "pages": [
+              "development/database-schema",
+              "development/migrations",
+              "development/models"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "development/docker-deployment",
+              "development/local-setup",
+              "development/environment-config",
+              "development/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Role-based access control (Admin, Veterinarian, Employee)",
+    "Animal management with health tracking",
+    "Habitat and service management",
+    "Veterinary health state reports",
+    "Animal click statistics tracking",
+    "Public visitor pages with filters",
+    "Contact form and testimonials",
+    "Responsive design with Bootstrap 5",
+    "Docker and local deployment options",
+    "Screaming Architecture with domain-driven design"
+  ],
+  "publicApiSurface": [
+    "/auth/pages/login - User authentication",
+    "/home/pages/index - Public homepage",
+    "/home/pages/start - Admin dashboard",
+    "/animals/pages/allanimals - Browse all animals",
+    "/animals/pages/animalpicked?id={id} - View individual animal",
+    "/animals/feeding/* - Animal feeding logs (authenticated)",
+    "/animals/gest/* - Animal management (authenticated)",
+    "/habitats/pages/* - Habitat browsing",
+    "/habitats/gest/* - Habitat management (authenticated)",
+    "/contact/pages/contact - Contact form",
+    "/testimonials/pages/* - Visitor testimonials",
+    "/vreports/* - Veterinary health reports (authenticated)",
+    "/users/gest/* - User management (admin only)",
+    "/roles/gest/* - Role management (admin only)",
+    "/permissions/gest/* - Permission management (admin only)"
+  ]
+}
